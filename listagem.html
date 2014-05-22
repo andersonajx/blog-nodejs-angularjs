@@ -1,0 +1,18 @@
+<div ng-init="buscarPessoas()">
+
+    <a href="#/novo">Novo</a>
+
+    <table border="0" style="width: 50%">
+        <tr>
+            <td><b>Nome</b></td>
+            <td><b>Telefone</b></td>
+            <td><b>E-mail</b></td>
+        </tr>
+
+        <tr ng-repeat="pessoa in pessoas">
+            <td>{{pessoa.nome}}</td>
+            <td>{{pessoa.telefone}}</td>
+            <td>{{pessoa.email}}</td>
+        </tr>
+    </table>
+</div>

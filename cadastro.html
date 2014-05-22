@@ -1,0 +1,25 @@
+<form name="form" ng-submit="salvar()">
+
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td><input ng-model="pessoa.nome" name="nome" required="true"></td>
+        </tr>
+
+        <tr>
+            <td>Telefone</td>
+            <td><input ng-model="pessoa.telefone" name="telefone" required="true"></td>
+        </tr>
+
+        <tr>
+            <td>E-mail</td>
+            <td><input ng-model="pessoa.email" name="email" required="true"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Salvar" ng-disabled="!form.$valid"></td>
+            <td><a href="#/">Voltar</a></td>
+        </tr>
+    </table>
+
+</form>
